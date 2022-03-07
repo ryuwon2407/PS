@@ -10,9 +10,9 @@ int seq_check(int i)
         return 1;
     else if(i >= 100 && i < 1000)
     {
-        dig[0] = i / 100;
-        dig[1] = (i % 100) / 10;
-        dig[2] = i % 10;
+        dig[0] = i / 100;       //첫째 자리
+        dig[1] = (i % 100) / 10;//둘째 자리
+        dig[2] = i % 10;        //셋째 자리
         if(dig[0] - dig[1] == dig[1] - dig[2])
             return 1;
         else
