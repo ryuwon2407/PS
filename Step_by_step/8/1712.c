@@ -3,7 +3,6 @@
 int main()
 {
     int A, B, C;
-    long long int i;
 
     scanf("%d %d %d", &A, &B, &C);
     if( C - B <= 0)
