@@ -1,24 +1,22 @@
 #include <stdio.h>
-#include <time.h>
+
+#define MAX 1000000
 
 int main()
 {
-    double start, end;
-    int num = 2147483647;    //입력 받은 숫자
-    int i;
+   int M, N;
+   int temp[MAX];
+   temp[1] = 1;
 
-    start = (double)clock() / CLOCKS_PER_SEC;
+   scanf("%d %d", &M, &N);
+   
+    for(int i = 2; i <= N; i++)
+        for(int j = 2; i * j <= N; j++)
+            temp[i*j] = 1;
 
-    if(num == 0 || num == 1)
-        printf("%d : Not Prime\n", num);
-    for(i = 2; i < num / 2; i++)
-        if(num % i == 0) break;
-    if(num == i)
-        printf("%d : Prime\n", num);
-    else
-        printf("%d : Prime\n", num);
-    end = (((double)clock()) / CLOCKS_PER_SEC);
-    printf("%lf\n", (end - start));
+    for(int i = M; i <= N; i++)
+        if(temp[i] == 0)
+            printf("%d\n", i);
+
+    return (0);
 }
-
-//

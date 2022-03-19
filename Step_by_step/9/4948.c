@@ -4,25 +4,23 @@ int prime_check(int num);
 
 int main()
 {
+    int prime_count;
     int n;
-    int prime_count = 0;
 
     while(1)
     {
-        scanf("%d\n", &n);
+        prime_count = 0;
+        scanf("%d", &n);
         if(n == 0)
             break;
-        for(int i = n; i <= 2 * n; i++)
+        for(int i = n + 1; i <= 2 * n; i++)
         {
-            prime_count = prime_check(i);
+            prime_count += prime_check(i);
         }
+        printf("%d\n", prime_count);
     }
-    printf("%d\n", prime_count);
-
     return (0);
 }
-
-
 
 int prime_check(int num)
 {
