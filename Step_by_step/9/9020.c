@@ -22,33 +22,28 @@ int main()
     return (0);
 }
 
-//241
-
 void Goldbach(int check, int *array)
 {
-    int i, j;
-    int num_1, num_2;
+    int i = check / 2
+    ,   j = 0;
 
-    for(i = 2; i <= check / 2 ; i++)
+    while(1)
     {
-        if(array[i] == 0)
-            for(j = 2; j <= check ;j++)
-                if(array[j] == 0)
-                    if(i + j == check)
-                    {
-                        num_1 = i;
-                        num_2 = j;
-                    }
+        if(!array[i + j] && !array[i - j])
+        {
+            printf("%d %d\n", i - j, i + j);
+            break;
+        }
+        j++;
     }
-    printf("%d %d\n", num_1, num_2);
 }
 
 
 int *set_prime()
 {
     static int array[MAX];
+    
     array[1] = 1;
-
     for(int i = 0; i <= MAX; i++) array[i] = 0; // 초기화
 
     for(int i = 2; i <= MAX; i++)
