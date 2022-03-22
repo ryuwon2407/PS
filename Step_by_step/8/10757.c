@@ -62,20 +62,6 @@ void str_plus_print(char num[2][MAX], int big_len, int small_len, int check)
     printf("\n");
 }
 
-//         if(result[i] + (num_1[num_1_size] - '0') + (num_2[i] - '0') >= 10)
-//         {
-//             result[num_1_size] = ((num_1[num_1_size] - '0') + (num_2[i] - '0')) / 10;
-//             result[num_1_size + 1] = ((num_1[num_1_size] - '0') + (num_2[i] - '0')) % 10;
-//         }
-//         else
-//             result[num_1_size + 1] = (num_1[num_1_size] - '0') + (num_2[i] - '0');
-
-
-
-
-
-
-
 // #include <stdio.h>
 // #include <string.h>
 
