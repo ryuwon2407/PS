@@ -3,10 +3,10 @@
 int main()
 {
     int num_1, num_2;
-    int i, temp = 1;
+    int temp = 1;
 
     scanf("%d %d", &num_1, &num_2);
-    for(int i = 2; i <= num_2 || i<= num_1; i++)
+    for(int i = 2; i <= num_2 && i<= num_1; i++)
         if(num_1 % i == 0 && num_2 % i == 0)
             temp = i;
 
