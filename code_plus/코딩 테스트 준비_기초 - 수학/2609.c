@@ -3,18 +3,14 @@
 int main()
 {
     int num_1, num_2;
+    int i, temp = 1;
 
     scanf("%d %d", &num_1, &num_2);
-    for(int i = 1; i <= num_1 && i <= num_2; i++)
-    {
+    for(int i = 2; i <= num_2 || i<= num_1; i++)
         if(num_1 % i == 0 && num_2 % i == 0)
-        {
-            printf("%d", i);
-            break;
-        }
-    }
-    for(int i = 1; 1 ;i++)
-    {
-        
-    }
+            temp = i;
+
+    printf("%d\n%d\n", temp, num_1 * num_2 / temp);
+
+    return (0);
 }
