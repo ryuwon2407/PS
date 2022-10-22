@@ -60,5 +60,5 @@ dkms.conf
 *.bak
 
 ## Ignore Folder ##
-/.vscode
+.vscode/
 /Baekjoon/작업중
