@@ -24,8 +24,4 @@ C
 - Update : 코드를 수정할 때
 - Delete : 코드를 삭제할 때
 - Docs  : README를 수정할 때
-- Etc
-
-# Example
-"Pass: Boj 10171 고양이"
-"Update: Boj 10171 고양이"'
+- Etc'
