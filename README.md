@@ -14,13 +14,14 @@ Mac OS Big Sur 11.6 (M1)
 &nbsp;
 **Python**
 &nbsp;
+**Swift**
+&nbsp;
 
 ## Commit Message
+백준 허브 이용중
+
 ```# Type
-- Pass  : 정답 코드를 제출할 때
-- Non-Pass : 오답 코드를 제출할 때
-- Fix   : 틀린 문제를 맞았을 때
-- Update : 코드를 수정할 때
-- Delete : 코드를 삭제할 때
-- Docs  : README를 수정할 때
-- Etc
+- Docs   : Markdown 추가/수정 할 경우
+- Update : 파일 수정할 경우
+- Delete : 파일 삭제할 경우
+- Etc    : 기타
