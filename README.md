@@ -7,19 +7,18 @@ Windows 10 Education
 
 Mac OS Big Sur 11.6 (M1)
 &nbsp;
-
+  
+  
 ## 사용 언어
 ---
-**C**
-&nbsp;
-**Python**
-&nbsp;
-**Swift**
-&nbsp;
-
+**C** 
+**Python** 
+**Swift** 
+  
+  
 ## Commit Message
 백준 허브 이용중
-
+  
 ```# Type
 - Docs   : Markdown 추가/수정 할 경우
 - Update : 파일 수정할 경우
