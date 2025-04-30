@@ -6,28 +6,29 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         
-        String alphabet = "abcdefghijklmnopqrstuvwxyz";
-        int[][] arr = new int[2][26];
-        int S = 0;
-        String str = "";
-
-        for(int i = 0; i < 2; i++) {
-            str = br.readLine();
-
-            for(int j = 0; j < str.length(); j++) {
-                for(int k = 0; k < alphabet.length(); k++) {
-                    if(str.charAt(j) == alphabet.charAt(k)) {
-                        arr[i][k]++;
-                    }
-                }
-            }
+        int[] count1 = new int[26];
+        int[] count2 = new int[26];
+        
+        String str1 = br.readLine();
+        String str2 = br.readLine();
+        
+        // 첫 번째 단어의 알파벳 개수 세기
+        for(char c : str1.toCharArray()) {
+            count1[c - 'a']++;
         }
         
-        for(int i = 0; i < 26; i++) {
-            S += Math.abs(arr[0][i] - arr[1][i]);
+        // 두 번째 단어의 알파벳 개수 세기
+        for(char c : str2.toCharArray()) {
+            count2[c - 'a']++;
         }
-
-        bw.write(S + "");
+        
+        // 차이의 절대값 합산
+        int result = 0;
+        for(int i = 0; i < 26; i++) {
+            result += Math.abs(count1[i] - count2[i]);
+        }
+        
+        bw.write(String.valueOf(result));
         bw.flush();
         br.close();
         bw.close();
