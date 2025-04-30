@@ -11,8 +11,8 @@ Mac OS Big Sur 11.6 (M1)
 
 ## 사용 언어
 ---
+**Java**
 **C** 
-**Python** 
 **Swift** 
 <br/>
 <br/>
